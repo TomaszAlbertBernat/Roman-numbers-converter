@@ -1,0 +1,94 @@
+/* styles.css */
+
+/* Base styles */
+body {
+    background-color: #f5f5f5;
+    font-family: 'Times New Roman', Times, serif;
+    color: #2c2c2c;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 3em;
+    color: #800000;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #d4af37;
+}
+
+/* Form styles */
+form {
+    background: #fff;
+    border: 2px solid #800000;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type="number"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #800000;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+button {
+    background-color: #800000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #a30000;
+    transform: scale(1.05);
+}
+
+/* Output styles */
+.output {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #800000;
+    min-height: 2em;
+}
+
+/* Footer styles */
+footer {
+    margin-top: 50px;
+    font-size: 0.8em;
+    color: #2c2c2c;
+}
+
+/* Animation styles */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1, form, .output, footer {
+    animation: fadeIn 1s ease-in-out;
+}
